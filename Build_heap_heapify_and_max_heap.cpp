@@ -64,8 +64,9 @@ void Max_Heap::print(int *h, int len)
 int main()
 {
 	Max_Heap h;
-	int len = 8;
-	int arr[len] = {100, 5, 3, 2, 8, 15, 6, 102};
+	int len;
+	int arr[] = {100, 5, 3, 2, 8, 15, 6, 102};
+	len = sizeof(arr)/sizeof(int);
 //	h.build_heap(arr, len);
 	h.heap_sort(arr, len);
 	h.print(arr, len);
