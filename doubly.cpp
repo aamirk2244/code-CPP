@@ -187,7 +187,7 @@ void List::append(int val)
          current = head;
          return;
     }
-
+    current = get_last();
     node* n = new node(val);
     length++;
     current->next = n;
